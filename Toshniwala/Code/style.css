@@ -1,0 +1,356 @@
+@font-face {
+    font-family: 'vogue';
+    src: url('../Fonts/Vogue.ttf') format('truetype');
+}
+
+body.white-bg {
+  background-color: white;
+  background-image:
+    linear-gradient(to right, transparent 19px, #e0e0e0 20px, #e0e0e0 21px, transparent 22px),
+    linear-gradient(to bottom, transparent 19px, #e0e0e0 20px, #e0e0e0 21px, transparent 22px);
+  background-size: 40px 40px;
+}
+
+body.dark-bg {
+  background-color: #1a1a1a;
+  background-image: url('jpoahnrq.png'); /* use compressed or WebP version */
+  background-repeat: no-repeat;
+  background-size: cover; /* stretches the image to fill entire viewport */
+  background-position: center center;
+  background-attachment: fixed; /* optional: keeps the image fixed while scrolling */
+}
+
+
+
+body {
+  transition: background-color 0.5s ease, background-image 0.5s ease;
+  
+}
+
+#loading-screen {
+  text-align: center;
+  font-size: 4rem;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+#main-site {
+  display: none;
+  color: #000000;
+  font-size: 2rem;
+}
+.glow {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, #3cff006c, transparent 60%);
+  mix-blend-mode: screen;
+  transition: transform 1s ease-out;
+  z-index: 1;
+}
+
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: center;
+    padding: 10px 0;
+    z-index: 9999; /* Stay on top */
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    font-family: 'vogue';
+    letter-spacing: 5px;
+    background-color: rgba(19, 19, 19, 0.786);
+    padding: 0px 20px;
+    backdrop-filter: blur(5px);
+    width: 600px;
+    margin: 20px;
+    border-radius: 50px;
+    border-left: 1px solid rgba(255, 255, 255, 0.387);
+    border-right: 1px solid rgba(255, 255, 255, 0.387);
+    transition: all 0.3s ease;
+}
+.container h2{
+    margin-left: 25px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+.container:hover{
+    border: 1px solid rgba(255, 255, 255, 0.387);
+}
+
+.container img{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    transition: all 0.3s ease;
+    filter: invert(1);
+}
+.nav-container{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    border-top: 1px solid rgb(92, 92, 92);
+    border-bottom: 1px solid rgb(92, 92, 92);
+    padding: 0px 10px;
+    margin-top: 3px;
+    height: 50px;
+    border-radius: 50px;
+    transition: all 0.1s ease;
+}
+.nav-container:hover{
+    border-top: 0px solid rgb(92, 92, 92);
+    border-bottom: 0px solid rgb(92, 92, 92);
+    border-left: 1px solid rgb(92, 92, 92);
+    border-right: 1px solid rgb(92, 92, 92);
+}
+.nav-container img:hover{
+    filter: invert(0.5);
+}
+.menu-img{
+    position: absolute;
+    top: 37px;
+    right: 50px;
+    z-index: 100;
+    height: 30px;
+    width: 30px;
+    opacity: 60%;
+    filter: invert(1);
+    border: 1px solid rgba(0, 0, 0, 0.592);
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgba(238, 238, 238, 0.53);
+    transition: all 0.3s ease;
+}
+.menu-img:hover{
+    background-color: rgb(255, 255, 255);
+    filter: invert(0);
+}
+
+.image-1{
+    position: absolute;
+    right: 100px;
+    top: 170px;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.left-content {
+    margin-top: 100px;
+    margin-left: 50px;
+    max-width: 400px;
+    color: #000000;
+    padding: 40px;
+    font-family: 'vogue';
+    line-height: 1.6;
+    background-color: rgba(255, 255, 255, 0.296);
+    backdrop-filter:blur(5px);
+    border: 1px solid white;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+.left-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.left-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.left-content button {
+    padding: 10px 25px;
+    background-color: rgba(255, 255, 255, 0.296);
+    backdrop-filter:blur(5px);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.left-content button:hover {
+    background-color: rgb(35, 35, 35);
+    color: rgb(255, 255, 255);
+}
+
+#image1 {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    top: 0px;
+    right: 70px;
+    object-fit: cover;
+    border-radius: 25px  ; 
+    filter: drop-shadow(0px 0px 10px rgb(30, 30, 30));
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-out;
+}
+.image-1 img{
+  object-fit: cover;
+  place-items: center;
+  border: 1px solid black;
+}
+.image-1 {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  height: 50px;
+  position: relative;
+  background: #ffffff00;
+  color: rgb(30, 30, 30)
+}
+
+.marquee-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 800s linear infinite;
+}
+
+.marquee-track.reverse {
+  animation: scroll-right 2000s linear infinite;
+}
+
+.marquee-track span {
+  display: inline-block;
+  margin: 0 2px;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+
+.card-container {
+    margin-top: 50px ;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  .card {
+    background-color: #00000035;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.676);
+    padding: 40px 0px;
+    width: 250px;
+    text-align: center;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    filter: drop-shadow(0 0 20px rgb(255, 255, 255));
+  }
+
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 30px;
+  }
+
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000000;
+  }
+
+  .speciality {
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .experience {
+    font-size: 14px;
+    color: #000000;
+  }
+
+  .parallax {
+    /* The image used */
+    background-image: url('xunfsde5.png');
+
+    /* Set a specific height */
+    min-height: 200px; 
+    margin-top: 50px;
+    /* Create the parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 100%;
+    border-top:5px solid white ;
+    border-bottom:5px solid white ;
+
+  }
+
+.des{
+  text-wrap: wrap;
+  color: rgb(0, 0, 0);
+  margin-top: 50px;
+  font-family: 'vogue';
+  max-width: 50%;
+  margin-left: 50px;
+  line-height: 1.6;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.296);
+  backdrop-filter:blur(5px);
+  padding: 0px 20px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
