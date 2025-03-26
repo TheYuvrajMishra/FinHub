@@ -93,7 +93,7 @@ function createMarqueeContent(tasks, repeat = 2) {
   const glow = document.getElementById('glow-shadow');
 
   document.addEventListener('mousemove', (e) => {
-    glow.style.transform = `translate(${e.clientX - 250}px, ${e.clientY - 350}px)`;
+    glow.style.transform = `translate(${e.clientX - 30}px, ${e.clientY - 120}px)`;
   });
 
 
@@ -151,4 +151,15 @@ function createMarqueeContent(tasks, repeat = 2) {
     document.getElementById('main-site').style.display = 'block';
   }, 3000);
   
+
   
+
+
+const navToggle = document.getElementById('page-nav-toggle');
+const navLinks = document.querySelectorAll('.main-navigation a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navToggle.checked = false;
+  });
+});
