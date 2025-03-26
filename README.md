@@ -1,10 +1,11 @@
-🌐 FinHub – Empowering Businesses with Financial Intelligence
+🌐 #FinHub 
+Empowering Businesses with Financial Intelligence
 Welcome to FinHub, the digital front door of a forward-thinking Chartered Accountancy firm that blends traditional expertise with modern solutions. We help businesses grow smarter with compliance, strategy, and innovation.
 
-🚀 About FinHub
+🚀 #About FinHub
 FinHub is more than just a CA firm. We are growth partners for startups, MSMEs, and enterprises looking for clarity in numbers and confidence in compliance.
 
-✅ Our Services:
+✅ #Our Services:
 📈 Business Advisory & Valuation
 
 🧾 GST, TDS, and Income Tax Filings
@@ -17,7 +18,7 @@ FinHub is more than just a CA firm. We are growth partners for startups, MSMEs, 
 
 📊 SME IPO Advisory & Funding Assistance
 
-🖥️ Website Features
+🖥️ #Website Features
 Our website is designed to be a powerful landing page that:
 
 Introduces who we are and what we do
@@ -30,27 +31,17 @@ Shares client testimonials and case studies
 
 Is fully responsive and mobile-friendly
 
-📷 Preview
+📷 #Preview
 
 "Helping entrepreneurs turn ideas into structured, scalable, and sustainable businesses."
 
-🛠️ Tech Stack
-Frontend: HTML5, CSS3, JavaScript (or React/Tailwind if used)
+🛠️ #Tech Stack
+Frontend: HTML5, CSS3, JavaScript, Bootstrap
 
-Hosting: GitHub Pages / Netlify / Vercel (edit based on where hosted)
+Hosting: GitHub Pages
 
-Forms: Formspree / Google Forms Integration (if applicable)
 
-📌 How to Use
-Clone this repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/TheYuvrajMishra/FinHub.git
-Open index.html in your browser or deploy using your preferred hosting service.
-
-📬 Contact Us
+📬 #Contact Us
 Let’s connect!
 
 📧 Email: yuvraj17mishra11@gmail.com
